@@ -1,0 +1,39 @@
+.title {
+    font-size: 32px;
+    text-align: center;
+}
+.productsContainer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 2.5rem;
+}
+.outerCardContainer {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 4px 4px 8px;
+    padding: 1rem;
+}
+.outerCardContainer > h4{
+border-bottom: 1px solid rgba(130, 126, 126, 0.6);
+}
+.innerCardContainer {
+    display: flex;
+    gap: 2rem;
+}
+.innerCardContainer > img{
+   width: 150px;
+   aspect-ratio: auto;
+}
+
+.cardRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.cardRight > p {
+    font-size: 20px;
+}
